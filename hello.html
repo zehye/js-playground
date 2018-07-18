@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1>JS Playground</h1>
-        <script>
-        console.log("Hello world");
-        </script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+</head>
+<body>
+    <script>
+        var input1 = prompt("숫자를 입력해 주세요");
+        var input2 = prompt("숫자를 입력해 주세요");
+        var n1 = Number(input1);
+        var n2 = Number(input2);
+        console.log("입력한 숫자는" + n1 + n2 +"입니다.");
+        console.log("입력한 숫자는" + n1 - n2 +"입니다.");
+        console.log("입력한 숫자는" + n1 * n2 +"입니다.");
+        console.log("입력한 숫자는" + n1 / n2 +"입니다.");
+
+        var s1 = prompt("아무 문장이나 써 넣어주세요");
+        console.log(s1.length);
+
+        var weight = prompt("몸무게를 작성해주세요");
+        var height = prompt("키가 몇입니까?");
+        var n3 = Number(weight);
+        var n4 = Number(height) / 100;
+        var bmi = n3/(n4 * n4);
+        document.write("BMI" + bmi + "입니다.");
+
+
+    </script>
+</body>
 </html>
